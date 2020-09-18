@@ -1,6 +1,7 @@
 package abstracts;
 
-import java.util.Date;
+import classes.Person;
+
 import java.util.List;
 
 public abstract class SocialNetwork {

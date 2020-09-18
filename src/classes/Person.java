@@ -1,7 +1,4 @@
-package abstracts;
-
-import classes.Gender;
-
+package classes;
 import java.util.ArrayList;
 
 public class Person {
@@ -60,6 +57,10 @@ public class Person {
     public void addNewFriend(String userName) {
         this.friendsName = userName;
         listOfFriends.add(userName);
+    }
+
+    public void deleteFriends(String userName){
+        listOfFriends.remove(userName);
     }
 
 

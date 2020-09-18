@@ -1,4 +1,4 @@
-import abstracts.Person;
+import classes.Person;
 import classes.Gender;
 import classes.Facebook;
 import classes.Instagram;
@@ -22,14 +22,17 @@ public class main {
         test.addNewFriend("Abcd2 Usdb");
         test.addNewFriend("Abcd3 Usdb");
 
+
         Person test2 = new Person("Test2","Test2", Gender.MALE, "25-09-2003", formattedDate);
         test2.addNewFriend("Abcd Usdb2");
         test2.addNewFriend("Abcd1 Usdb2");
         test2.addNewFriend("Abcd2 Usdb2");
         test2.addNewFriend("Abcd3 Usdb2");
 
-        System.out.println("Test's" + test.getListOfFriends());
-        System.out.println("Test2's" + test2.getListOfFriends());
+        test2.deleteFriends("Abcd Usdb2");
+
+        System.out.println("Test's " + test.getListOfFriends());
+        System.out.println("Test2's " + test2.getListOfFriends());
 
         Facebook facebook = new Facebook("Facebook", formattedDate);
         facebook.registration(test);

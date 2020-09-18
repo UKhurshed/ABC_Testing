@@ -1,6 +1,5 @@
 package classes;
 
-import abstracts.Person;
 import abstracts.SocialNetwork;
 
 import java.util.ArrayList;
